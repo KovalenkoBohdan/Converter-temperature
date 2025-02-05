@@ -5,7 +5,13 @@ public class Main {
         System.out.println("Converter App");
         double far = 150;
         double cel = converterFarToCel(far);
-        System.out.println("Result is " + cel + " celsiy");
+        double cels = 25;
+        double frt = converterCelToFar(cels);
+        System.out.println("Result is " + cel + " celsiy and fahrenheit " + frt);
+    }
+
+    private static double converterCelToFar(double cels) {
+        return (cels * 9 / 5) + 32;
     }
 
     private static double converterFarToCel(double far) {
